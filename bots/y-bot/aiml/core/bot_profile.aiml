@@ -74,24 +74,24 @@
         <template>
             <think>
                 <set var="years">
-                    <interval format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy">
+                    <interval format="%B %d, %Y" >
                         <style>years</style>
                         <from>
                             <bot name="birthdate"/>
                         </from>
                         <to>
-                            <date format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy"/>
+                            <date format="%B %d, %Y" />
                         </to>
                     </interval>
                 </set>
                 <set var="months">
-                    <interval format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy">
+                    <interval format="%B %d, %Y" >
                         <style>months</style>
                         <from>
                             <bot name="birthdate"/>
                         </from>
                         <to>
-                            <date format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy"/>
+                            <date format="%B %d, %Y" />
                         </to>
                     </interval>
                 </set>
@@ -111,13 +111,13 @@
     <category>
         <pattern>AGE IN YEARS</pattern>
         <template>
-            <interval format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy">
+            <interval format="%B %d, %Y" >
                 <style>years</style>
                 <from>
                     <bot name="birthdate"/>
                 </from>
                 <to>
-                    <date format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy"/>
+                    <date format="%B %d, %Y" />
                 </to>
             </interval>
         </template>

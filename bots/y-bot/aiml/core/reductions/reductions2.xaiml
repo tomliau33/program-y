@@ -853,7 +853,7 @@
 <template><srai>MY BIRTHDAY IS FEBRUARY 14</srai></template>
 </category>
 <category><pattern>MY BIRTHDAY IS TODAY</pattern>
-<template><srai>MY BIRTHDAY IS <date format="%B %d" jformat="MMMMMMMMM dd"/></srai></template>
+<template><srai>MY BIRTHDAY IS <date format="%B %d" /></srai></template>
 </category>
 <category><pattern>MY BOYFRIENDS *</pattern>
 <template><srai>MY BOYFRIEND S <star/></srai></template>

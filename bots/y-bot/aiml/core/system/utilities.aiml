@@ -444,24 +444,24 @@
                     </set>
                 </set>
                 <set var="years">
-                    <interval format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy">
+                    <interval format="%B %d, %Y" >
                         <style>years</style>
                         <from>
                             <get var="from"/>
                         </from>
                         <to>
-                            <date format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy"/>
+                            <date format="%B %d, %Y" />
                         </to>
                     </interval>
                 </set>
                 <set var="months">
-                    <interval format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy">
+                    <interval format="%B %d, %Y" >
                         <style>months</style>
                         <from>
                             <get var="from"/>
                         </from>
                         <to>
-                            <date format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy"/>
+                            <date format="%B %d, %Y" />
                         </to>
                     </interval>
                 </set>

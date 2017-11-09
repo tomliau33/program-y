@@ -27,7 +27,7 @@
         <template>
             <think>
                 <set var="month">
-                    <date format="%B" jformat="MMMMMMMMM"/>
+                    <date format="%B" />
                 </set>
             </think>
             <condition var="month">
@@ -62,7 +62,7 @@
     <category>
         <pattern>DAY</pattern>
         <template>Today is
-            <date format="%A" jformat="EEEEEEEEEE"/>
+            <date format="%A" />
         </template>
     </category>
     <category>
@@ -70,7 +70,7 @@
         <template>
             <think>
                 <set var="today">
-                    <date format="%A" jformat="EEEEEEEEEE"/>
+                    <date format="%A"  />
                 </set>
             </think>
             <map name="tomorrow">
@@ -81,7 +81,7 @@
     <category>
         <pattern>YEAR ^</pattern>
         <template>This is
-            <date format="%Y" jformat="yyyy"/>
+            <date format="%Y" />
         </template>
     </category>
     <category>
@@ -89,7 +89,7 @@
         <template>
             <map>
                 <name>successor</name>
-                <date format="%Y" jformat="yyyy"/>
+                <date format="%Y" />
             </map>
         </template>
     </category>
@@ -98,26 +98,26 @@
         <template>
             <map>
                 <name>predecessor</name>
-                <date format="%Y" jformat="yyyy"/>
+                <date format="%Y" />
             </map>
         </template>
     </category>
     <category>
         <pattern>MONTH</pattern>
         <template>This is
-            <date format="%B" jformat="MMMMMMMMM"/>
+            <date format="%B" />
         </template>
     </category>
     <category>
         <pattern>TIME</pattern>
         <template>The time is
-            <date format="%I:%M %p" jformat="h:mm a"/>
+            <date format="%I:%M %p" />
         </template>
     </category>
     <category>
         <pattern>DATE</pattern>
         <template>Today is
-            <sentence><date format="%B %d, %Y" jformat="MMMMMMMMM dd yyyy"/></sentence>
+            <sentence><date format="%B %d, %Y" /></sentence>
         </template>
     </category>
     <category>
@@ -125,10 +125,10 @@
         <template>
             <think>
                 <set var="hour">
-                    <date format="%I" jformat="h"/>
+                    <date format="%I" />
                 </set>
                 <set var="ampm">
-                    <date format="%p" jformat="a"/>
+                    <date format="%p" />
                 </set>
             </think>
             <condition>
@@ -160,10 +160,10 @@
     <category>
         <pattern>DAYS UNTIL CHRISTMAS</pattern>
         <template>
-            <interval format="%B %d" jformat="MMMMMMMMM dd">
+            <interval format="%B %d" >
                 <style>days</style>
                 <from>
-                    <date format="%B %d" jformat="MMMMMMMMM dd"/>
+                    <date format="%B %d" />
                 </from>
                 <to>December 25</to>
             </interval>
@@ -175,10 +175,10 @@
         <pattern>DAYS UNTIL <set>month</set> <set>number</set> <set>number</set>
         </pattern>
         <template>
-            <interval format="%B %d %Y" jformat="MMMMMMMMM dd yyyy">
+            <interval format="%B %d %Y" >
                 <style>days</style>
                 <from>
-                    <date format="%B %d %Y" jformat="MMMMMMMMM dd yyyy"/>
+                    <date format="%B %d %Y" />
                 </from>
                 <to>
                     <star/>
@@ -194,15 +194,15 @@
         <pattern>DAYS UNTIL <set>month</set> <set>number</set>
         </pattern>
         <template>
-            <interval format="%B %d %Y" jformat="MMMMMMMMM dd yyyy">
+            <interval format="%B %d %Y" >
                 <style>days</style>
                 <from>
-                    <date format="%B %d %Y" jformat="MMMMMMMMM dd yyyy"/>
+                    <date format="%B %d %Y" />
                 </from>
                 <to>
                     <star/>
                     <star index="2"/>
-                    <date format="%Y" jformat="yyyy"/>
+                    <date format="%Y" />
                 </to>
             </interval>
             days.
@@ -213,7 +213,7 @@
         <pattern>DATE TOMORROW</pattern>
         <template>
             <srai>TOMORROWDATE
-                <date format="%B %d %Y" jformat="MMMMMMMMM dd yyyy"/>
+                <date format="%B %d %Y" />
             </srai>
         </template>
     </category>
@@ -383,7 +383,7 @@
         <template>
             <map name="tomorrow">
                 <map name="tomorrow">
-                    <date format="%A" jformat="EEEEEEEEEE"/>
+                    <date format="%A" />
                 </map>
             </map>
         </template>
@@ -397,7 +397,7 @@
                     <star/>
                 </set>
                 <set var="date">
-                    <date format="%B %d %Y" jformat="MMMMMMMMM dd yyyy"/>
+                    <date format="%B %d %Y" />
                 </set>
             </think>
             <condition var="days">
@@ -432,7 +432,7 @@
                     <star/>
                 </set>
                 <set var="today">
-                    <date format="%A" jformat="EEEEEEEEEE"/>
+                    <date format="%A" />
                 </set>
                 <set var="days">0</set>
             </think>
@@ -520,7 +520,7 @@
                     <star/>
                 </set>
                 <set var="day">
-                    <date format="%A" jformat="EEEEEEEEEE"/>
+                    <date format="%A" />
                 </set>
             </think>
             <condition var="days">
