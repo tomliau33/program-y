@@ -48,7 +48,14 @@ class TemplateGraphConditionTests(TemplateGraphTestClient):
     def test_condition_template_type1_variant1_var(self):
         template = ET.fromstring("""
             <template>
-                <condition var="aname" value="avalue">X <random><li>1</li><li>2</li></random> Y</condition>
+                <condition var="aname" value="avalue">
+                    X 
+                    <random>
+                        <li>1</li>
+                        <li>2</li>
+                    </random> 
+                    Y
+                    </condition>
             </template>
             """)
         ast = self.parser.parse_template_expression(template)
@@ -93,7 +100,10 @@ class TemplateGraphConditionTests(TemplateGraphTestClient):
     def test_condition_template_type1_variant2_var(self):
         template = ET.fromstring("""
             <template>
-                <condition var="aname"><value>avalue</value>X</condition>
+                <condition var="aname">
+                    <value>avalue</value>
+                    X
+                </condition>
             </template>
             """)
         ast = self.parser.parse_template_expression(template)
@@ -114,7 +124,10 @@ class TemplateGraphConditionTests(TemplateGraphTestClient):
     def test_condition_template_type1_variant3_name(self):
         template = ET.fromstring("""
 			<template>
-				<condition value="avalue"><name>aname</name>X</condition>
+				<condition value="avalue">
+				    <name>aname</name>
+				    X
+				</condition>
 			</template>
 			""")
         ast = self.parser.parse_template_expression(template)
@@ -134,7 +147,10 @@ class TemplateGraphConditionTests(TemplateGraphTestClient):
     def test_condition_template_type1_variant3_var(self):
         template = ET.fromstring("""
             <template>
-                <condition value="avalue"><var>aname</var>X</condition>
+                <condition value="avalue">
+                    <var>aname</var>
+                    X
+                </condition>
             </template>
             """)
         ast = self.parser.parse_template_expression(template)
@@ -155,7 +171,11 @@ class TemplateGraphConditionTests(TemplateGraphTestClient):
     def test_condition_template_type1_variant4_name(self):
         template = ET.fromstring("""
 			<template>
-				<condition><name>aname</name><value>avalue</value>X</condition>
+				<condition>
+				    <name>aname</name>
+				    <value>avalue</value>
+				    X
+				</condition>
 			</template>
 			""")
         ast = self.parser.parse_template_expression(template)
@@ -176,7 +196,11 @@ class TemplateGraphConditionTests(TemplateGraphTestClient):
     def test_condition_template_type1_variant4_var(self):
         template = ET.fromstring("""
             <template>
-                <condition><var>aname</var><value>avalue</value>X</condition>
+                <condition>
+                    <var>aname</var>
+                    <value>avalue</value>
+                    X
+                </condition>
             </template>
             """)
         ast = self.parser.parse_template_expression(template)

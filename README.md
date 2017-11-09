@@ -1,41 +1,47 @@
 # Readme info:
 
-Version: 1.2.0 <br/>
+Version: 1.3.0 <br/>
 Authors: Keith Sterling <br/>
-Date: 8th November 2017 <br/>
+Date: xx xxxxxxx 2017 <br/>
 
-### Whats New in 1.2
+### What's New in 1.3
+*
+
+### What's New in 1.2
 * RDF Engine completely rewritten to be fully compatible with Alice grammar
 * Refactored Y-Bot triples.txt into more understandable and workable files based on category
 * New RDF Formatter  tool in utils 
 * Updated use of file handling to open all but neccassary files in readonly mode
 * Conversations now persistent between bot restarts
  
-### Whats New in 1.1
+### What's New in 1.1
 * CSV Output.
 * Default Variables
 
 
 # Introduction
 
-Program Y is an AIML interpretor written in Python. It includes an entire Python 3 framework for building you own chat bots using
+Program Y is an AIML base chat bot platform written in Python 3.x. It includes an entire Python 3 framework for building your own chat bots using
 Artificial Intelligence Markup Language, or AIML for short. 
 
-Programy-Y is fully cross plaform, running on 
+Programy-Y is fully cross-plaform, running on 
 
 * Mac OSX
 * Linux
 * Windows
 
-100% Support for all AIML 2.0 Tags plus all Pandora bot ones they never documented
+100% Support for all AIML 2.0 Tags plus all Pandora bot ones they never documented, plus a number of additions to further improve AIML usage
 
 * Full support for al AIML 2.0 Tags
-* RDF Support through addtriple, deletetriple, select, uniq and uniq
+* RDF Support through addtriple, deletetriple, select uniq
 * List processing with First and Rest
-* Advanced learn support including resetlearn and resetlearnf
-* Full Out Of Band Support
+* Advanced learn support including learn and learnf plus support for resetlearn and resetlearnf
+* Full extensible Out Of Band (OOB) Support
 * Full embedded XML/HTML Support
 * Dynamic Sets, Maps and Variables
+* Persistent conversations between bot restarts
+* AIML to CSV and CSV to AIML conversion tools
+* A comprehensive [AIML 2.0 Tutorial](https://github.com/keiffster/program-y/wiki/AIML-Tutorial) with examples
 
 Program Y is extremely extensible, you can
 
@@ -54,7 +60,7 @@ Program Y is extremely extensible, you can
   * Twitter
   * Google Hangouts (XMPP)
   * SMS ( coming soon )
-  * Facebook ( coming )
+  * Facebook ( coming  soon )
   * Slack ( coming soon )
 
 Program-Y comes with a base set of grammars for various industry sectors, including
